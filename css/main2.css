@@ -1,0 +1,42 @@
+:root{
+    --main-color: tomato;
+    --text-color: #fff;
+}
+.box{
+    width: 500px;
+    height: 200px;
+    background: var(--main-color);
+    margin: 10px;
+    position: relative;
+    transition-property: width, background, border-radius;
+    transition-duration: 4s; 
+    transition: all 4s; 
+}
+/* Transition - active, hover, after, before */
+
+.box:hover{
+    width: 200px;
+    background: #11998e;
+    border-radius: 40px;
+    transform: rotateY(180deg);
+}
+
+/* Gradient - linear gradient or radial gradient */
+
+.a{
+    background: linear-gradient(to right,green 10%, yellow 60%, pink)
+}
+.b{
+    background: radial-gradient(red, black);
+}
+/* uigradients.com */
+.c{
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.d{
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

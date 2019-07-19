@@ -1,0 +1,13 @@
+/* Rule - selector:declaration */
+/* Author - Justice Banson 
+    Version - 1.0
+    Date - July 1, 2019
+*/
+body{
+    color: purple;
+    font-size: 18px;
+    background-color: #ccc;
+}
+h2{
+    color: mediumpurple
+}

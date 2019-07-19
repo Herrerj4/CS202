@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lesson 3 | Forms & Multimedia</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- Form -->
+    <form action="mail.php" method="POST" name="form" autocomplete="">
+      <label for="name">Name</label>
+      <input type="text" name="n1" id="name" required placeholder="Enter..." />
+
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <br /><br />
+
+      <label for="phone">Phone</label>
+      <input type="text" name="phone" id="phone" />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- some bootstrap -->
+
+    <section style="background-color: lavender">
+      <div class="container">
+        <!-- fluid - causes the text to fill the bottle like a fluid -->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+          nobis optio iure totam quis magni vel consectetur amet quasi fuga
+          quia, eligendi voluptates laborum eum ipsum et eaque reiciendis
+          consequatur?
+        </p>
+      </div>
+    </section>
+
+    <!-- bootstrap -->
+
+    <div class="container">
+        <form action="mail.php" method="POST" autocomplete="" class="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="" class="form-control" placeholder="Enter Your Name...">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" class="form-control" placeholder="Enter Your Email...">
+            </div>
+
+            <select name="city" id="city" class="custom-select mr-sm-2">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <!-- Contextual Colors - primary, danger, warning, muted, success, secondary,  -->
+            <button type="button" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+    <!-- Multimedia -->
+    <h3>Audio</h3>
+    <audio controls autoplay loop muted>
+        <source type="audio/mp3" src="media/audio.mp3">
+    </audio>
+    <h3>Video</h3>
+    <video controls width="200px" loop poster="images/wester.jpg">
+        <source type="video/mp4" src="media/video.mp4">
+    </video>
+
+  </body>
+</html>
