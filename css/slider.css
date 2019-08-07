@@ -1,0 +1,10 @@
+.banner{
+    width: 1140px;
+    height: 500px;
+    margin: 80px auto;
+    position: relative;
+}
+.slider img{
+    width: 100%;
+    position: absolute;
+}

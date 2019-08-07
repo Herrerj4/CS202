@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/baguetteBox.css">
+    <link rel="stylesheet" href="css/simpleLightbox.css">
+
+    <style>
+        .gallery{
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-columns: 1fr 1fr 1fr;  */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .card img{
+            width: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3 class="text-center">Gallery</h3>
+    <div class="container gallery">
+        <div class="card">
+            <a href="images/3.jpg">
+                <img src="images/3.jpg" alt="Image 1">
+            </a>
+        </div> <!-- End of card 1 -->
+        <div class="card">
+            <a href="images/4.jpg">
+                <img src="images/4.jpg" alt="Image 2">
+            </a>
+        </div>
+        <div class="card">
+            <a href="images/5.jpg">
+                <img src="images/5.jpg" alt="Image 3">
+            </a>
+        </div>
+        <div class="card">
+            <a href="images/6.jpg">
+                <img src="images/6.jpg" alt="Image 4">
+            </a>
+        </div>
+        <div class="card">
+            <a href="images/7.jpg">
+                <img src="images/7.jpg" alt="Image 5">
+            </a>
+        </div>
+        <div class="card">
+            <a href="images/8.jpg">
+                <img src="images/8.jpg" alt="Image 6">
+            </a>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/baguetteBox.js"></script>
+    <script src="js/simpleLightbox.js"></script>
+    <script src="js/lightbox.js"></script>
+
+</body>
+
+</html>

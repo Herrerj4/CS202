@@ -21,6 +21,17 @@ let user = {
     email: 'justice@justicebanson.com',
     location: 'Bellingham',
     blog: ['Modern JavaScript', 'html, css and jquery are dead but javascript rules'],
+    login(){
+        console.log('The user logged in');
+    },
+    logout(){
+        console.log('This user is logged out');
+    },
+    logBlogs(){
+        this.blog.forEach(blog =>{
+            console.log(blog)
+        });
+    }
 }
 
 //console.log(user);
@@ -31,3 +42,5 @@ user['name'] = 'Jonathan';
 console.log(user.name);
 console.log(user.age);
 console.log(typeof user);
+
+user.logBlogs();
